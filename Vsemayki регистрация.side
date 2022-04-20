@@ -1,0 +1,157 @@
+{
+  "id": "84ef4357-0b49-402d-b36a-6e3da1775078",
+  "version": "2.0",
+  "name": "Vsemayki",
+  "url": "https://www.vsemayki.ru",
+  "tests": [{
+    "id": "b534a3e3-6bff-4255-a01e-7df6f4236317",
+    "name": "Регистрация пользователя",
+    "commands": [{
+      "id": "f7a38e26-8b56-44b2-8ae6-c04d6a63361a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b834ca2-ec8f-4445-a193-dd4d5a04000a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1026x681",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ee548ca-8188-4cdc-812b-191f13357c1d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f069534-06c7-4d72-b69e-9d29e418f898",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3540813a-67df-4da8-805e-b88b6069acb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.position-relative:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e30a1bbb-9db7-4978-8468-ce724858fb50",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.position-relative:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "kalina3894@mail.ua"
+    }, {
+      "id": "e391e0ac-11e9-4cbc-962e-23e0613a2e5b",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.position-relative:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28951fb2-082b-4934-91d6-f5bd95c1b08f",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.position-relative:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12346"
+    }, {
+      "id": "05b0f583-4b40-40e3-8063-316cfc0b2ae9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-eye > path",
+      "targets": [
+        ["css=.fa-eye > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc29fc58-f40f-424b-9684-9c8240c0b106",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d4c8f0-77e0-481b-8575-73dc1c1df6be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "908dcd96-4d90-48a0-adaa-84a6b2542d2a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f9d04f2-2ed2-467c-9e48-f767b8ae2295",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > .btn-primary",
+      "targets": [
+        ["css=.row > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ce7eae62-e4f6-4573-8eb8-d508b3102ece",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b534a3e3-6bff-4255-a01e-7df6f4236317"]
+  }],
+  "urls": ["https://www.vsemayki.ru/"],
+  "plugins": []
+}
